@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 
-##### ignoring the model:
+#### ignoring the model:
 model/llama-2-7b-chat.Q4_0.gguf
