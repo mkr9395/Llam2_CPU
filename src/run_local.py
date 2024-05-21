@@ -32,9 +32,9 @@ llm = CTransformers(
 
 # creating the LLM Chain
 
-LLM_Chain = LLMCHAIN(
+LLM_Chain = LLMChain(
     prompt = prompt,
     llm=llm
 )
 
-print(LLM_Chain.invoke("How are you?"))
+print(LLM_Chain.run("How are you?"))
