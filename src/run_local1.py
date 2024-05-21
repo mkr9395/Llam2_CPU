@@ -13,7 +13,7 @@ instruction = "Give a proper summary of the of : \n\n {text}"
 # SYSTEM_PROMPT = B_SYS + DEFAULT_SYSTEM_PROMPT + E_SYS
 
 
-# Custom suystem prompt for HINDI translation
+# Custom suystem prompt for Book summary
 SYSTEM_PROMPT = B_SYS + CUSTOM_SYSTEM_PROMPT + E_SYS
 
 

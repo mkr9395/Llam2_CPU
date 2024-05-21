@@ -9,8 +9,11 @@ B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 
 instruction = "Convert the following text from English to Hindi: \n\n {text}"
 
-# Default suystem prompt for HINDI translation
-SYSTEM_PROMPT = B_SYS + DEFAULT_SYSTEM_PROMPT + E_SYS
+## Default suystem prompt for HINDI translation
+# SYSTEM_PROMPT = B_SYS + DEFAULT_SYSTEM_PROMPT + E_SYS
+
+# Custom suystem prompt for HINDI translation
+SYSTEM_PROMPT = B_SYS + CUSTOM_SYSTEM_PROMPT + E_SYS
 
 
 template = B_INST + SYSTEM_PROMPT + instruction + E_INST
