@@ -2,6 +2,7 @@ from langchain import PromptTemplate
 from langchain import LLMChain
 from langchain.llms import CTransformers
 from src.helper import *
+# from llama_cpp_python import Llama
 
 B_INST, E_INST = "[INST]","[/INST]"
 B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
@@ -22,7 +23,7 @@ prompt  = PromptTemplate(
 # Loading the LLM Model
 
 llm = CTransformers(
-    model='model/llama-2-7b-chat.Q4_0.gguf',
+    model='model/llama-2-7b-chat.ggmlv3.q4_0.bin',
     model_type = 'llama',
     config = {'max_new_tokens':128,
               'temperature':0.01} 

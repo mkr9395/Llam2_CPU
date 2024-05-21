@@ -161,4 +161,4 @@ cython_debug/
 
 
 #### ignoring the model:
-model/llama-2-7b-chat.Q4_0.gguf
+model/llama-2-7b-chat.ggmlv3.q4_0.bin
